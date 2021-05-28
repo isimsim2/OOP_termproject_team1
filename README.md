@@ -29,7 +29,7 @@
 
 
 #### Our Application's demo UML Diagram
-
+![KakaoTalk_20210512_184645254](https://user-images.githubusercontent.com/59161563/120019899-f7e06a00-c023-11eb-86d0-0db20a463f7a.png)
 
 
 #### Proposal Presentation Slide & Video
