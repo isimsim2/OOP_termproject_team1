@@ -23,7 +23,7 @@
   * Proposal Presentation
   * Create Plan class's Subclass(Appointment, Assignment, Goal)
 * 서은수
-  * Create Date & Plan class
+  * Create DateInfo & Plan class
   * Final Presentation
 
 
