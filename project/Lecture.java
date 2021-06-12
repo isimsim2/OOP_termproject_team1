@@ -1,6 +1,6 @@
 package project;
 
-public class lecture extends date
+public class Lecture extends DateInfo
 {
 	public String subject;
 	public String course;
@@ -83,7 +83,7 @@ public class lecture extends date
 	
 	
 	/*
-	 * ´Ù¸¥ ¿ÀºêÁ§Æ®¿Í ½Ã°£°ú ¿äÀÏÀÌ µ¿ÀÏÇÑÁö È®ÀÎ
+	 * ë‹¤ë¥¸ ì˜¤ë¸Œì íŠ¸ì™€ ì‹œê°„ê³¼ ìš”ì¼ì´ ë™ì¼í•œì§€ í™•ì¸
 	 * */
 	public boolean equals(Object obj) 
 	{
