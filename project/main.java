@@ -21,6 +21,11 @@ import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import javax.swing.SwingConstants;
 
+/**
+ * Implement main class. (= Project Demo file)
+ * @author Kim Min Jun.
+ * last modified 2021-06-12.
+ */
 
 public class main {
 
@@ -66,7 +71,7 @@ public class main {
 		
 
 		/*
-		 * ÇÁ·¹ÀÓ »ı¼º
+		 * í”„ë ˆì„ ìƒì„±
 		 * */
 	    frame = new JFrame();
 		frame.getContentPane().setForeground(Color.WHITE);
@@ -77,7 +82,7 @@ public class main {
 		frame.setVisible(true);
 		
 		/*
-		 * ¸ŞÀÎÆĞ³Î »ı¼º
+		 * ë©”ì¸íŒ¨ë„ ìƒì„±
 		 */
 		ImagePanel mainPanel = new ImagePanel(new ImageIcon(main.class.getResource("/image/backgroundImage.png")).getImage());
 		mainPanel.setBounds(0, 0, 584, 641);
@@ -86,7 +91,7 @@ public class main {
 		
 	
 		/*
-		 * ¸Ş´ºÆĞ³Î »ı¼º
+		 * ë©”ë‰´íŒ¨ë„ ìƒì„±
 		 */
 		JPanel menu = new JPanel();
 		menu.setBounds(24, 21, 537, 69);
@@ -122,7 +127,7 @@ public class main {
 		
 		
 		/*
-		 * contentPlan ÆĞ³Î »ı¼º(µî·ÏÇÑ planÀ» º¸¿©ÁÖ´Â ÆĞ³Î)
+		 * contentPlan íŒ¨ë„ ìƒì„±(ë“±ë¡í•œ planì„ ë³´ì—¬ì£¼ëŠ” íŒ¨ë„)
 		 */
 		JPanel contentPlan = new JPanel();
 		contentPlan.setBackground(Color.WHITE);
@@ -130,7 +135,7 @@ public class main {
 		contentPlan.setLayout(null);
 		mainPanel.add(contentPlan);
 		
-		//ÀÌ¹ÌÁö »ğÀÔ
+		//ì´ë¯¸ì§€ ì‚½ì…
 		JLabel contentPlanLabel = new JLabel();
 		contentPlanLabel.setIcon(new ImageIcon(main.class.getResource("/image/plan.PNG")));
 		contentPlanLabel.setBounds(12, 10, 499, 53);
@@ -138,7 +143,7 @@ public class main {
 	
 			
 		/*
-		 * contentTimetblae ÆĞ³Î »ı¼º(µî·ÏÇÑ lectureÀ» º¸¿©ÁÖ´Â ÆĞ³Î)
+		 * contentTimetblae íŒ¨ë„ ìƒì„±(ë“±ë¡í•œ lectureì„ ë³´ì—¬ì£¼ëŠ” íŒ¨ë„)
 		 */
 		JPanel contentTimetable = new JPanel();
 		contentTimetable.setBackground(Color.WHITE);
@@ -154,7 +159,7 @@ public class main {
 		
 		
 		/*
-		 * registerPlan ÆĞ³Î »ı¼º(planÀ» µî·ÏÇÏ´Â ÆĞ³Î)
+		 * registerPlan íŒ¨ë„ ìƒì„±(planì„ ë“±ë¡í•˜ëŠ” íŒ¨ë„)
 		 * */
 		JPanel registerPlan = new JPanel();
 		registerPlan.setBackground(Color.WHITE);
@@ -165,7 +170,7 @@ public class main {
 		
 		
 		/*
-		 * selectPlan ÆĞ³Î »ı¼º(°úÁ¦,¾à¼Ó,¸ñÇ¥ Áß ÇÏ³ªÀÇ planÀ» ¼±ÅÃÇÏ´Â ÆĞ³Î)
+		 * selectPlan íŒ¨ë„ ìƒì„±(ê³¼ì œ,ì•½ì†,ëª©í‘œ ì¤‘ í•˜ë‚˜ì˜ planì„ ì„ íƒí•˜ëŠ” íŒ¨ë„)
 		 * */
 		JPanel selectPlan = new JPanel();
 		selectPlan.setBackground(Color.WHITE);
@@ -174,7 +179,7 @@ public class main {
 		selectPlan.setLayout(null);
 		selectPlan.setVisible(false);
 		
-		//ÀÌ¹ÌÁö »ğÀÔ
+		//ì´ë¯¸ì§€ ì‚½ì…
 		JLabel imageLabel = new JLabel();
 		imageLabel.setBounds(0, 0, 501, 30);
 		selectPlan.add(imageLabel);
@@ -182,7 +187,7 @@ public class main {
 		
 		
 		/*
-		 * selectPlan¿¡¼­ ¼±ÅÃÇÑ plan¿¡ ¸Â°Ô ÇØ´çµÇ´Â Á¤º¸¸¦ ÀÔ·ÂÇÏ´Â ÆĞ³Î
+		 * selectPlanì—ì„œ ì„ íƒí•œ planì— ë§ê²Œ í•´ë‹¹ë˜ëŠ” ì •ë³´ë¥¼ ì…ë ¥í•˜ëŠ” íŒ¨ë„
 		 * */
 		JPanel registerPlanInfo = new JPanel();
 		registerPlanInfo.setBackground(Color.WHITE);
@@ -191,7 +196,7 @@ public class main {
 		registerPlanInfo.setLayout(null);
 		registerPlanInfo.setVisible(false);
 		
-		//ÀÌ¹ÌÁö »ğÀÔ
+		//ì´ë¯¸ì§€ ì‚½ì…
 		JLabel registerLabel = new JLabel();
 		registerLabel.setHorizontalAlignment(SwingConstants.LEFT);
 		registerLabel.setIcon(new ImageIcon(main.class.getResource("/image/registerPlan.PNG")));
@@ -203,31 +208,31 @@ public class main {
 		
 		JTextPane dateTextPanel = new JTextPane();
 		dateTextPanel.setEditable(false);
-		dateTextPanel.setText("³¯Â¥");
+		dateTextPanel.setText("ë‚ ì§œ");
 		dateTextPanel.setBounds(50, 105, 74, 21);
 		registerPlanInfo.add(dateTextPanel);	
 		
 		JTextPane monthTextPanel = new JTextPane();
 		monthTextPanel.setEditable(false);
-		monthTextPanel.setText("¿ù");
+		monthTextPanel.setText("ì›”");
 		monthTextPanel.setBounds(190, 105, 34, 21);
 		registerPlanInfo.add(monthTextPanel);
 			
 		JTextPane dayTextPanel = new JTextPane();
 		dayTextPanel.setEditable(false);
-		dayTextPanel.setText("ÀÏ");
+		dayTextPanel.setText("ì¼");
 		dayTextPanel.setBounds(281, 105, 34, 21);
 		registerPlanInfo.add(dayTextPanel);
 		
 		JTextPane timeTextPanel2 = new JTextPane();
 		timeTextPanel2.setEditable(false);
-		timeTextPanel2.setText("½Ã");
+		timeTextPanel2.setText("ì‹œ");
 		timeTextPanel2.setBounds(365, 105, 74, 21);
 		registerPlanInfo.add(timeTextPanel2);
 		
 		JTextPane contentTextPanel = new JTextPane();
 		contentTextPanel.setEditable(false);
-		contentTextPanel.setText("³»¿ë");
+		contentTextPanel.setText("ë‚´ìš©");
 		contentTextPanel.setBounds(50, 168, 46, 21);
 		registerPlanInfo.add(contentTextPanel);
 		
@@ -242,24 +247,24 @@ public class main {
 		String dayComboArr[] = {"01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"};
 		String timeComboArr[] = {"00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23",};
 		
-		//¸î ¿ùÀÎÁö ¼±ÅÃÇÏ´Â ÄŞº¸¹Ú½º
+		//ëª‡ ì›”ì¸ì§€ ì„ íƒí•˜ëŠ” ì½¤ë³´ë°•ìŠ¤
 		JComboBox monthCombo = new JComboBox(monthComboArr);
 		monthCombo.setBounds(146, 105, 46, 23);
 		registerPlanInfo.add(monthCombo);
 		
-		//¸î ÀÏÀÎÁö ¼±ÅÃÇÏ´Â ÄŞº¸¹Ú½º
+		//ëª‡ ì¼ì¸ì§€ ì„ íƒí•˜ëŠ” ì½¤ë³´ë°•ìŠ¤
 		JComboBox dayCombo = new JComboBox(dayComboArr);
 		dayCombo.setBounds(236, 105, 46, 23);
 		registerPlanInfo.add(dayCombo);
 		
-		//¸î ½ÃÀÎÁö ¼±ÅÃÇÏ´Â ÄŞº¸¹Ú½º
+		//ëª‡ ì‹œì¸ì§€ ì„ íƒí•˜ëŠ” ì½¤ë³´ë°•ìŠ¤
 		JComboBox timeCombo = new JComboBox(timeComboArr);
 		timeCombo.setBounds(318, 105, 43, 23);
 		registerPlanInfo.add(timeCombo);
 		
 		
 		/*
-		 * »ç¿ëÀÚ·ÎºÎÅÍ °ªÀ» ÀÔ·Â¹Ş´Â TextField »ı¼º
+		 * ì‚¬ìš©ìë¡œë¶€í„° ê°’ì„ ì…ë ¥ë°›ëŠ” TextField ìƒì„±
 		 * */
 	
 		JTextField contentTextField = new JTextField();
@@ -275,7 +280,7 @@ public class main {
 		
 		
 		/*
-		 * registerButton Å¬¸¯ ½Ã, »ç¿ëÀÚ°¡ ¼±ÅÃÇÑ ÄŞº¸¹Ú½º¿Í TextFeild¿¡ ÀÔ·ÂÇÑ Á¤º¸¸¦ ÀúÀå ¹× Ãâ·ÂÇÑ´Ù
+		 * registerButton í´ë¦­ ì‹œ, ì‚¬ìš©ìê°€ ì„ íƒí•œ ì½¤ë³´ë°•ìŠ¤ì™€ TextFeildì— ì…ë ¥í•œ ì •ë³´ë¥¼ ì €ì¥ ë° ì¶œë ¥í•œë‹¤
 		 * */
 		JButton registerButton = new JButton("Register");
 		registerButton.setBackground(Color.WHITE);
@@ -286,64 +291,64 @@ public class main {
 			{	
 				for(int i=0; i<plan.length; i++)
 				{
-					//ÇØ´çÇÏ´Â ÀÎµ¦½º¿¡ µî·ÏµÈ planÀÌ ¾øÀ» ½Ã
+					//í•´ë‹¹í•˜ëŠ” ì¸ë±ìŠ¤ì— ë“±ë¡ëœ planì´ ì—†ì„ ì‹œ
 					if(plan[i] == null)
 					{											
 						
-						//planÀ» Ãâ·ÂÇÏ´Â TextField »ı¼º
+						//planì„ ì¶œë ¥í•˜ëŠ” TextField ìƒì„±
 						
-						//planTextField1 planÀÇ Á¾·ù Ãâ·Â				
+						//planTextField1 planì˜ ì¢…ë¥˜ ì¶œë ¥				
 						planTextField1[i] = new JTextField();					
 						planTextField1[i].setEditable(false);
 						planTextField1[i].setBackground(Color.WHITE);
 						planTextField1[i].setBounds(35, 113+(i*40), 70, 21);
 						planTextField1[i].setBorder(null);
-						planTextField1[i].setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 13));
+						planTextField1[i].setFont(new Font("í•¨ì´ˆë¡¬ë‹ì›€", Font.BOLD, 13));
 						contentPlan.add(planTextField1[i]);					
 						
-						//planTextField2 planÀÇ Á¤º¸ Ãâ·Â
+						//planTextField2 planì˜ ì •ë³´ ì¶œë ¥
 						planTextField2[i] = new JTextField();					
 						planTextField2[i].setEditable(false);
 						planTextField2[i].setBackground(Color.WHITE);
 						planTextField2[i].setBounds(130, 113+(i*40), 300, 21);
 						planTextField2[i].setBorder(null);
-						planTextField2[i].setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 11));
+						planTextField2[i].setFont(new Font("í•¨ì´ˆë¡¬ë‹ì›€", Font.BOLD, 11));
 						contentPlan.add(planTextField2[i]);
 										
-						//planTextField3 d-day Ãâ·Â
+						//planTextField3 d-day ì¶œë ¥
 						planTextField3[i] = new JTextField();					
 						planTextField3[i].setEditable(false);
 						planTextField3[i].setForeground(Color.red);
 						planTextField3[i].setBackground(Color.WHITE);
 						planTextField3[i].setBounds(450, 113+(i*40), 80, 21);
 						planTextField3[i].setBorder(null);
-						planTextField3[i].setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 11));
+						planTextField3[i].setFont(new Font("í•¨ì´ˆë¡¬ë‹ì›€", Font.BOLD, 11));
 						contentPlan.add(planTextField3[i]);
 											
-						//selectPlan¿¡¼­ appointmentBtn Å¬¸¯ ½Ã remarksPanel¿¡ "¸¸³ª´Â »ç¶÷" ÀÔ·ÂµÊ
-						//remarksPanel¿¡ °ªÀÌ "¸¸³ª´Â »ç¶÷" ÀÌ¸é appointment ¿ÀºêÁ§Æ® »ı¼º ÈÄ plan¹è¿­¿¡ ÀúÀå						
-						if(remarksTextPanel.getText().equals("¸¸³ª´Â »ç¶÷"))
+						//selectPlanì—ì„œ appointmentBtn í´ë¦­ ì‹œ remarksPanelì— "ë§Œë‚˜ëŠ” ì‚¬ëŒ" ì…ë ¥ë¨
+						//remarksPanelì— ê°’ì´ "ë§Œë‚˜ëŠ” ì‚¬ëŒ" ì´ë©´ appointment ì˜¤ë¸Œì íŠ¸ ìƒì„± í›„ planë°°ì—´ì— ì €ì¥						
+						if(remarksTextPanel.getText().equals("ë§Œë‚˜ëŠ” ì‚¬ëŒ"))
 						{
-							//Á¤º¸ ÀúÀå
+							//ì •ë³´ ì €ì¥
 							plan[i] = new appointment();			
 							plan[i].setMonth(monthCombo.getSelectedItem().toString());
 							plan[i].setDay(dayCombo.getSelectedItem().toString());					
 							plan[i].setTime(timeCombo.getSelectedItem().toString());
 							plan[i].setContent(contentTextField.getText());							
-							((appointment)plan[i]).setFriendName(reamarksTextField.getText()); //ÀÚ½ÄÅ¬·¡½º º¯¼ö¸¦ »ç¿ëÇÏ¹Ç·Î °­Á¦Àû Çüº¯È¯
+							((appointment)plan[i]).setFriendName(reamarksTextField.getText()); //ìì‹í´ë˜ìŠ¤ ë³€ìˆ˜ë¥¼ ì‚¬ìš©í•˜ë¯€ë¡œ ê°•ì œì  í˜•ë³€í™˜
 							
 							
-							//Á¤º¸ Ãâ·Â
-							planTextField1[i].setText("¾à¼Ó");
+							//ì •ë³´ ì¶œë ¥
+							planTextField1[i].setText("ì•½ì†");
 							planTextField1[i].setForeground(Color.magenta);
 							planTextField2[i].setText(((appointment)plan[i]).getInfo());
 							planTextField3[i].setText("D-day " + plan[i].getRemaingTime());						
 						}
 						
 						
-						//selectPlan¿¡¼­ assignment Å¬¸¯ ½Ã remarksPanel¿¡ "³­ÀÌµµ" ÀÔ·ÂµÊ
-						//remarksPanel¿¡ °ªÀÌ "³­ÀÌµµ" ÀÌ¸é assignment ¿ÀºêÁ§Æ® »ı¼º ÈÄ plan¹è¿­¿¡ ÀúÀå
-						else if(remarksTextPanel.getText().equals("³­ÀÌµµ"))
+						//selectPlanì—ì„œ assignment í´ë¦­ ì‹œ remarksPanelì— "ë‚œì´ë„" ì…ë ¥ë¨
+						//remarksPanelì— ê°’ì´ "ë‚œì´ë„" ì´ë©´ assignment ì˜¤ë¸Œì íŠ¸ ìƒì„± í›„ planë°°ì—´ì— ì €ì¥
+						else if(remarksTextPanel.getText().equals("ë‚œì´ë„"))
 						{
 							plan[i] = new assignment();			
 							plan[i].setMonth(monthCombo.getSelectedItem().toString());
@@ -352,7 +357,7 @@ public class main {
 							plan[i].setContent(contentTextField.getText());
 							((assignment)plan[i]).setDifficulty(reamarksTextField.getText());
 							
-							planTextField1[i].setText("°úÁ¦");
+							planTextField1[i].setText("ê³¼ì œ");
 							planTextField1[i].setForeground(Color.blue);
 							planTextField2[i].setText(((assignment)plan[i]).getInfo());
 							planTextField3[i].setText("D-day " + plan[i].getRemaingTime());					
@@ -360,9 +365,9 @@ public class main {
 							
 						}
 						
-						//selectPlan¿¡¼­ goal Å¬¸¯ ½Ã remarksPanel¿¡ "Áß¿äµµ" ÀÔ·ÂµÊ
-						//remarksPanel¿¡ °ªÀÌ "Áß¿äµµ" ÀÌ¸é assignment ¿ÀºêÁ§Æ® »ı¼º ÈÄ plan¹è¿­¿¡ ÀúÀå
-						else if(remarksTextPanel.getText().equals("Áß¿äµµ"))
+						//selectPlanì—ì„œ goal í´ë¦­ ì‹œ remarksPanelì— "ì¤‘ìš”ë„" ì…ë ¥ë¨
+						//remarksPanelì— ê°’ì´ "ì¤‘ìš”ë„" ì´ë©´ assignment ì˜¤ë¸Œì íŠ¸ ìƒì„± í›„ planë°°ì—´ì— ì €ì¥
+						else if(remarksTextPanel.getText().equals("ì¤‘ìš”ë„"))
 						{					
 							plan[i] = new goal();			
 							plan[i].setMonth(monthCombo.getSelectedItem().toString());
@@ -371,7 +376,7 @@ public class main {
 							plan[i].setContent(contentTextField.getText());
 							((goal)plan[i]).setImportance(reamarksTextField.getText());
 							
-							planTextField1[i].setText("¸ñÇ¥");	
+							planTextField1[i].setText("ëª©í‘œ");	
 							planTextField1[i].setForeground(Color.orange);
 							planTextField2[i].setText(((goal)plan[i]).getInfo());					
 							planTextField3[i].setText("D-day " + plan[i].getRemaingTime());											
@@ -381,7 +386,7 @@ public class main {
 					}							
 				}
 				
-				//TextField °ª ÃÊ±âÈ­
+				//TextField ê°’ ì´ˆê¸°í™”
 				contentTextField.setText("");
 				reamarksTextField.setText("");
 				
@@ -393,7 +398,7 @@ public class main {
 		});
 		
 		
-		//Cancel¹öÆ° Å¬¸¯ ½Ã contentPlanÀ» º¸¿©ÁØ´Ù
+		//Cancelë²„íŠ¼ í´ë¦­ ì‹œ contentPlanì„ ë³´ì—¬ì¤€ë‹¤
 		JButton cancelBtn = new JButton("Cancel");
 		cancelBtn.setBackground(Color.WHITE);
 		cancelBtn.setBounds(390, 399, 97, 23);
@@ -408,8 +413,8 @@ public class main {
 		});
 		
 
-		//appointmentBtn Å¬¸¯ ½Ã remarksTextPanel¿¡ "¸¸³ª´Â »ç¶÷" ÀÔ·Â ÇÏ°í registerPlanInfoPanelÀ» º¸¿©ÁØ´Ù
-		JButton appointmentBtn = new JButton("¾à¼Ó");
+		//appointmentBtn í´ë¦­ ì‹œ remarksTextPanelì— "ë§Œë‚˜ëŠ” ì‚¬ëŒ" ì…ë ¥ í•˜ê³  registerPlanInfoPanelì„ ë³´ì—¬ì¤€ë‹¤
+		JButton appointmentBtn = new JButton("ì•½ì†");
 		appointmentBtn.setBackground(Color.WHITE);
 		appointmentBtn.setBounds(41, 102, 97, 79);
 		selectPlan.add(appointmentBtn);
@@ -417,15 +422,15 @@ public class main {
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				remarksTextPanel.setText("¸¸³ª´Â »ç¶÷");			
+				remarksTextPanel.setText("ë§Œë‚˜ëŠ” ì‚¬ëŒ");			
 				selectPlan.setVisible(false);
 				registerPlanInfo.setVisible(true);
 			}
 		});
 		
 				
-		//assignmentBtn Å¬¸¯ ½Ã remarksTextPanel¿¡ "°úÁ¦" ÀÔ·Â ÇÏ°í registerPlanInfoPanelÀ» º¸¿©ÁØ´Ù
-		JButton assignmentBtn = new JButton("°úÁ¦");
+		//assignmentBtn í´ë¦­ ì‹œ remarksTextPanelì— "ê³¼ì œ" ì…ë ¥ í•˜ê³  registerPlanInfoPanelì„ ë³´ì—¬ì¤€ë‹¤
+		JButton assignmentBtn = new JButton("ê³¼ì œ");
 		assignmentBtn.setBackground(Color.WHITE);
 		assignmentBtn.setBounds(207, 102, 97, 79);
 		selectPlan.add(assignmentBtn);
@@ -433,7 +438,7 @@ public class main {
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				remarksTextPanel.setText("³­ÀÌµµ");
+				remarksTextPanel.setText("ë‚œì´ë„");
 				selectPlan.setVisible(false);
 				registerPlanInfo.setVisible(true);
 			}
@@ -441,8 +446,8 @@ public class main {
 		
 		
 		
-		//goalBtn Å¬¸¯ ½Ã remarksTextPanel¿¡ "¸ñÇ¥" ÀÔ·Â ÇÏ°í registerPlanInfoPanelÀ» º¸¿©ÁØ´Ù
-		JButton goalBtn = new JButton("¸ñÇ¥");
+		//goalBtn í´ë¦­ ì‹œ remarksTextPanelì— "ëª©í‘œ" ì…ë ¥ í•˜ê³  registerPlanInfoPanelì„ ë³´ì—¬ì¤€ë‹¤
+		JButton goalBtn = new JButton("ëª©í‘œ");
 		goalBtn.setBackground(Color.WHITE);
 		goalBtn.setBounds(367, 102, 97, 79);
 		selectPlan.add(goalBtn);
@@ -450,7 +455,7 @@ public class main {
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				remarksTextPanel.setText("Áß¿äµµ");
+				remarksTextPanel.setText("ì¤‘ìš”ë„");
 				selectPlan.setVisible(false);
 				registerPlanInfo.setVisible(true);
 			}
@@ -462,7 +467,7 @@ public class main {
 		
 		
 		/*
-		 * ½Ã°£Ç¥¸¦ µî·ÏÇÏ´Â ÆĞ³Î »ı¼º
+		 * ì‹œê°„í‘œë¥¼ ë“±ë¡í•˜ëŠ” íŒ¨ë„ ìƒì„±
 		 * */
 		JPanel registerTimetable = new JPanel();
 		registerTimetable.setBorder(null);
@@ -472,7 +477,7 @@ public class main {
 		registerTimetable.setVisible(false);
 		mainPanel.add(registerTimetable);
 		
-		//ÀÌ¹ÌÁö »ğÀÔ
+		//ì´ë¯¸ì§€ ì‚½ì…
 		JLabel lblNewLabel = new JLabel();
 		lblNewLabel.setIcon(new ImageIcon(main.class.getResource("/image/registerTimetable.PNG")));
 		lblNewLabel.setBounds(12, 27, 493, 23);
@@ -482,49 +487,49 @@ public class main {
 		
 		JTextPane subjectTextPanel = new JTextPane();
 		subjectTextPanel.setEditable(false);
-		subjectTextPanel.setText("°ú¸ñ¸í");
+		subjectTextPanel.setText("ê³¼ëª©ëª…");
 		subjectTextPanel.setBounds(62, 77, 112, 21);
 		registerTimetable.add(subjectTextPanel);
 		
 		JTextPane timeTextPanel = new JTextPane();
 		timeTextPanel.setEditable(false);
-		timeTextPanel.setText("½Ã°£");
+		timeTextPanel.setText("ì‹œê°„");
 		timeTextPanel.setBounds(62, 205, 112, 21);
 		registerTimetable.add(timeTextPanel);
 		
 		JTextPane courseTextPanel = new JTextPane();
-		courseTextPanel.setText("ÀÌ¼ö");
+		courseTextPanel.setText("ì´ìˆ˜");
 		courseTextPanel.setEditable(false);
 		courseTextPanel.setBounds(62, 119, 112, 21);
 		registerTimetable.add(courseTextPanel);
 		
 		JTextPane dayOfTheWeekTextPanel = new JTextPane();
 		dayOfTheWeekTextPanel.setEditable(false);
-		dayOfTheWeekTextPanel.setText("¿äÀÏ");
+		dayOfTheWeekTextPanel.setText("ìš”ì¼");
 		dayOfTheWeekTextPanel.setBounds(62, 161, 112, 21);
 		registerTimetable.add(dayOfTheWeekTextPanel);
 		
 		JTextPane lectureRoomTextPanel = new JTextPane();
 		lectureRoomTextPanel.setEditable(false);
-		lectureRoomTextPanel.setText("°­ÀÇ½Ç");
+		lectureRoomTextPanel.setText("ê°•ì˜ì‹¤");
 		lectureRoomTextPanel.setBounds(62, 298, 112, 21);
 		registerTimetable.add(lectureRoomTextPanel);
 		
 		JTextPane professorNameTextPanel = new JTextPane();
 		professorNameTextPanel.setEditable(false);
-		professorNameTextPanel.setText("±³¼ö´Ô");
+		professorNameTextPanel.setText("êµìˆ˜ë‹˜");
 		professorNameTextPanel.setBounds(62, 253, 112, 21);
 		registerTimetable.add(professorNameTextPanel);
 			
 		JTextPane emailTextPanel = new JTextPane();
 		emailTextPanel.setEditable(false);
-		emailTextPanel.setText("ÀÌ¸ŞÀÏ");
+		emailTextPanel.setText("ì´ë©”ì¼");
 		emailTextPanel.setBounds(62, 344, 112, 21);
 		registerTimetable.add(emailTextPanel);
 		
 		JTextPane linkTextPanel = new JTextPane();
 		linkTextPanel.setEditable(false);
-		linkTextPanel.setText("À¥¿¢½º ¸µÅ©");
+		linkTextPanel.setText("ì›¹ì—‘ìŠ¤ ë§í¬");
 		linkTextPanel.setBounds(62, 392, 112, 21);
 		registerTimetable.add(linkTextPanel);
 		
@@ -532,7 +537,7 @@ public class main {
 		
 		
 		/*
-		 * »ç¿ëÀÚ·ÎºÎÅÍ °ªÀ» ÀÔ·Â¹Ş´Â TextField »ı¼º
+		 * ì‚¬ìš©ìë¡œë¶€í„° ê°’ì„ ì…ë ¥ë°›ëŠ” TextField ìƒì„±
 		 * */	
 		JTextField subjectTextField = new JTextField();
 		subjectTextField.setColumns(10);
@@ -565,55 +570,55 @@ public class main {
 			
 
 		
-		//¿äÀÏ ÄŞº¸¹Ú½º »ı¼º
-		String dayOftheWeekComboArr[] = {"¿ù","È­","¼ö","¸ñ","±İ"};
+		//ìš”ì¼ ì½¤ë³´ë°•ìŠ¤ ìƒì„±
+		String dayOftheWeekComboArr[] = {"ì›”","í™”","ìˆ˜","ëª©","ê¸ˆ"};
 		JComboBox dayOftheWeekComboBox = new JComboBox(dayOftheWeekComboArr);
 		dayOftheWeekComboBox.setBounds(186, 161, 71, 23);
 		registerTimetable.add(dayOftheWeekComboBox);
 		
 		
-		//½Ã°£ ÄŞº¸¹Ú½º »ı¼º
+		//ì‹œê°„ ì½¤ë³´ë°•ìŠ¤ ìƒì„±
 		String timeArr[] = {"09 - 11","11 - 13","13 - 15","15 - 17"};
 		JComboBox timeComboBox = new JComboBox(timeArr);
 		timeComboBox.setBounds(186, 205, 71, 23);
 		registerTimetable.add(timeComboBox);
 		
 		
-		//Àü°ø È¤Àº ±³¾ç ¼±ÅÃÇÏ´Â radiobutton »ı¼º
-		JRadioButton majorRadioBtn = new JRadioButton("Àü°ø");
+		//ì „ê³µ í˜¹ì€ êµì–‘ ì„ íƒí•˜ëŠ” radiobutton ìƒì„±
+		JRadioButton majorRadioBtn = new JRadioButton("ì „ê³µ");
 		majorRadioBtn.setBackground(Color.WHITE);
 		majorRadioBtn.setBounds(186, 119, 121, 23);
 		registerTimetable.add(majorRadioBtn);
 		
-		JRadioButton electiveRadioBtn = new JRadioButton("±³¾ç");
+		JRadioButton electiveRadioBtn = new JRadioButton("êµì–‘");
 		electiveRadioBtn.setBackground(Color.WHITE);
 		electiveRadioBtn.setBounds(313, 119, 121, 23);
 		registerTimetable.add(electiveRadioBtn);
 		
-		//majorRadioBtn,electiveRadioBtn µÎ°³ÀÇ ¶óµğ¿À ¹öÆ°À» ±×·ìÈ­ÇÏ¿© ÇÑ°³ÀÇ ¹öÆ°¸¸ ¼±ÅÃµÇ°Ô ÇÑ´Ù
+		//majorRadioBtn,electiveRadioBtn ë‘ê°œì˜ ë¼ë””ì˜¤ ë²„íŠ¼ì„ ê·¸ë£¹í™”í•˜ì—¬ í•œê°œì˜ ë²„íŠ¼ë§Œ ì„ íƒë˜ê²Œ í•œë‹¤
 		ButtonGroup group = new ButtonGroup();
 		group.add(majorRadioBtn);
 		group.add(electiveRadioBtn);
-		majorRadioBtn.setActionCommand("Àü°ø");
-		electiveRadioBtn.setActionCommand("±³¾ç");
+		majorRadioBtn.setActionCommand("ì „ê³µ");
+		electiveRadioBtn.setActionCommand("êµì–‘");
 		
-		//register ¹öÆ° »ı¼º
+		//register ë²„íŠ¼ ìƒì„±
 		JButton registerTimetableBtn = new JButton("Register");
 		registerTimetableBtn.setBounds(267, 462, 97, 23);
 		registerTimetableBtn.setBackground(Color.WHITE);
 		registerTimetable.add(registerTimetableBtn);
 		
-		//register ¹öÆ° Å¬¸¯½Ã
+		//register ë²„íŠ¼ í´ë¦­ì‹œ
 		registerTimetableBtn.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) 
 			{
 				for(int i =0; i<lecture.length; i++)
 				{
 						
-					//µî·ÏµÇ¾îÀÖ´Â lecture°¡ ¾øÀ» °æ¿ì »õ·Î »ı¼º
+					//ë“±ë¡ë˜ì–´ìˆëŠ” lectureê°€ ì—†ì„ ê²½ìš° ìƒˆë¡œ ìƒì„±
 					if(lecture[i] == null)
 					{					
-						//ÄŞº¸¹Ú½º°¡ Àü°øÀ¸·Î ¼±ÅÃµÇ¾úÀ» °æ¿ì major ¿ÀºêÁ§Æ® »ı¼º
+						//ì½¤ë³´ë°•ìŠ¤ê°€ ì „ê³µìœ¼ë¡œ ì„ íƒë˜ì—ˆì„ ê²½ìš° major ì˜¤ë¸Œì íŠ¸ ìƒì„±
 						if(majorRadioBtn.isSelected())
 						{
 							lecture[i] = new major();
@@ -627,14 +632,14 @@ public class main {
 							lecture[i].setLink(linkTextField.getText());
 									
 						
-							//lecture ¿ÀºêÁ§Æ® »ı¼º ½Ã µ¿ÀÏÇÑ ¿äÀÏ°ú ½Ã°£À» °¡Áø lecture°¡ ÀÖ´ÂÁö Áßº¹ È®ÀÎ						
+							//lecture ì˜¤ë¸Œì íŠ¸ ìƒì„± ì‹œ ë™ì¼í•œ ìš”ì¼ê³¼ ì‹œê°„ì„ ê°€ì§„ lectureê°€ ìˆëŠ”ì§€ ì¤‘ë³µ í™•ì¸						
 							for(int index = 0; index<i;index++)
 							{
 								if(lecture[index].equals(lecture[i]))
 								{	
-									//¿¡·¯ ¸Ş½ÃÁö Ã¢ ¶ç¿ì±â
+									//ì—ëŸ¬ ë©”ì‹œì§€ ì°½ ë„ìš°ê¸°
 									JOptionPane errorMessage=new JOptionPane();
-									errorMessage.showMessageDialog(null, "Error : µ¿ÀÏÇÑ ½Ã°£´ë¿¡ °ú¸ñÀÌ Á¸ÀçÇÕ´Ï´Ù");
+									errorMessage.showMessageDialog(null, "Error : ë™ì¼í•œ ì‹œê°„ëŒ€ì— ê³¼ëª©ì´ ì¡´ì¬í•©ë‹ˆë‹¤");
 									lecture[i] = null;
 								}
 							}
@@ -644,14 +649,14 @@ public class main {
 								break;
 							}
 										
-							//lectureÀÇ Á¤º¸¸¦ È®ÀÎ ÇÒ ¼ö ÀÖ´Â ¹öÆ° »ı¼º								
+							//lectureì˜ ì •ë³´ë¥¼ í™•ì¸ í•  ìˆ˜ ìˆëŠ” ë²„íŠ¼ ìƒì„±								
 							timeTableBtn[i] = new JButton();
 							timeTableBtn[i].setForeground(Color.DARK_GRAY);
-							timeTableBtn[i].setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 11));
+							timeTableBtn[i].setFont(new Font("í•¨ì´ˆë¡¬ë‹ì›€", Font.BOLD, 11));
 							timeTableBtn[i].setBackground(Color.CYAN);
 							timetableImage.add(timeTableBtn[i]);	
 												
-							//lectureÀÇ ¿äÀÏ°ú ½Ã°£¿¡ µû¶ó Æ¯Á¤ À§Ä¡¿¡ ¹öÆ° »ı¼º
+							//lectureì˜ ìš”ì¼ê³¼ ì‹œê°„ì— ë”°ë¼ íŠ¹ì • ìœ„ì¹˜ì— ë²„íŠ¼ ìƒì„±
 							for(int k=0;k<dayOftheWeekComboArr.length;k++)
 							{
 								for(int j=0;j<timeArr.length;j++)
@@ -664,13 +669,13 @@ public class main {
 								}
 							}
 												
-							//»ı¼ºµÈ ¹öÆ°¾È¿¡ µî·ÏÇÑ lecture Á¤º¸ Ãâ·Â
+							//ìƒì„±ëœ ë²„íŠ¼ì•ˆì— ë“±ë¡í•œ lecture ì •ë³´ ì¶œë ¥
 							timeTableBtn[i].setText("<html>"+lecture[i].getSubject() + "<br>" + lecture[i].getLectureRoom()+"</html>");							
 							
 							
 							int index = i;
 							
-							//timeTableBtn ¹öÆ° Å¬¸¯ ½Ã lectureInfo Ã¢ »ı¼º(ÆË¾÷Ã¢)
+							//timeTableBtn ë²„íŠ¼ í´ë¦­ ì‹œ lectureInfo ì°½ ìƒì„±(íŒì—…ì°½)
 							timeTableBtn[i].addActionListener(new ActionListener()
 							{
 								public void actionPerformed(ActionEvent e) 
@@ -687,7 +692,7 @@ public class main {
 					
 						
 		
-						//ÄŞº¸¹Ú½º°¡ ±³¾çÀ¸·Î ¼±ÅÃµÇ¾úÀ» °æ¿ì elective ¿ÀºêÁ§Æ® »ı¼º
+						//ì½¤ë³´ë°•ìŠ¤ê°€ êµì–‘ìœ¼ë¡œ ì„ íƒë˜ì—ˆì„ ê²½ìš° elective ì˜¤ë¸Œì íŠ¸ ìƒì„±
 						else if(electiveRadioBtn.isSelected())
 						{
 							lecture[i] = new elective();
@@ -707,7 +712,7 @@ public class main {
 								if(lecture[temp].equals(lecture[i]))
 								{			
 									JOptionPane errorMessage=new JOptionPane();
-									errorMessage.showMessageDialog(null, "Error : µ¿ÀÏÇÑ ½Ã°£´ë¿¡ °ú¸ñÀÌ Á¸ÀçÇÕ´Ï´Ù");
+									errorMessage.showMessageDialog(null, "Error : ë™ì¼í•œ ì‹œê°„ëŒ€ì— ê³¼ëª©ì´ ì¡´ì¬í•©ë‹ˆë‹¤");
 									lecture[i] = null;
 								}
 							}
@@ -720,7 +725,7 @@ public class main {
 																										
 							timeTableBtn[i] = new JButton();
 							timeTableBtn[i].setForeground(Color.DARK_GRAY);
-							timeTableBtn[i].setFont(new Font("ÇÔÃÊ·Òµ¸¿ò", Font.BOLD, 11));
+							timeTableBtn[i].setFont(new Font("í•¨ì´ˆë¡¬ë‹ì›€", Font.BOLD, 11));
 							timeTableBtn[i].setBackground(Color.ORANGE);				
 							timetableImage.add(timeTableBtn[i]);	
 									
@@ -756,7 +761,7 @@ public class main {
 					}		
 				}
 				
-				//textField °ª ÃÊ±âÈ­
+				//textField ê°’ ì´ˆê¸°í™”
 				subjectTextField.setText(null);
 				professorNameTextField.setText(null);
 				lectureRoomTextField.setText(null);
@@ -770,17 +775,17 @@ public class main {
 		});
 		
 		
-		//cancel ¹öÆ° »ı¼º
+		//cancel ë²„íŠ¼ ìƒì„±
 		JButton timeTableCancelBtn = new JButton("Cancel");
 		timeTableCancelBtn.setBackground(Color.WHITE);
 		timeTableCancelBtn.setBounds(409, 462, 97, 23);
 		registerTimetable.add(timeTableCancelBtn);
 		
-		//cancel ¹öÆ° Å¬¸¯ ½Ã
+		//cancel ë²„íŠ¼ í´ë¦­ ì‹œ
 		timeTableCancelBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				//contentTimetable panelÀ» º¸¿©ÁØ´Ù
+				//contentTimetable panelì„ ë³´ì—¬ì¤€ë‹¤
 				registerTimetable.setVisible(false);
 				contentTimetable.setVisible(true);
 				timetableImage.setVisible(true);
@@ -844,7 +849,7 @@ public class main {
 	}
 }
 
-//background ÀÌ¹ÌÁö »ğÀÔ
+//background ì´ë¯¸ì§€ ì‚½ì…
 class ImagePanel extends JPanel
 {
 	private Image img;
