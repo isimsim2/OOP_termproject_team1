@@ -19,25 +19,25 @@ import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import javax.swing.border.EmptyBorder;
 
-public class lectureInfo extends JDialog {
+public class LectureInfo extends JDialog {
 
 	private JPanel mainPanel = new JPanel();
 	
 
 	public lectureInfo(Window parent, lecture lectureArr) {
-		//ÆË¾÷Ã¢ »ı¼º
+		//íŒì—…ì°½ ìƒì„±
 		super(parent, "Modal", ModalityType.APPLICATION_MODAL);
 		setSize(400, 260);
 		setBounds(100, 100, 450, 332);
 		getContentPane().setLayout(new BorderLayout());
 
-		// ¸ŞÀÎÆĞ³Î »ı¼º
+		// ë©”ì¸íŒ¨ë„ ìƒì„±
 		mainPanel.setBackground(Color.WHITE);
 		mainPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(mainPanel, BorderLayout.CENTER);
 		mainPanel.setLayout(null);
 
-		// ÀÌ¹ÌÁö »ğÀÔ
+		// ì´ë¯¸ì§€ ì‚½ì…
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(lectureInfo.class.getResource("/image/Info.PNG")));
 		lblNewLabel.setBounds(50, 10, 327, 29);
@@ -47,37 +47,37 @@ public class lectureInfo extends JDialog {
 		JTextPane subjectTextPanel = new JTextPane();
 		subjectTextPanel.setBounds(56, 65, 43, 21);
 		subjectTextPanel.setEditable(false);
-		subjectTextPanel.setText("°ú¸ñ¸í");
+		subjectTextPanel.setText("ê³¼ëª©ëª…");
 		mainPanel.add(subjectTextPanel);
 
 		JTextPane courseTextPanel = new JTextPane();
 		courseTextPanel.setBounds(56, 96, 43, 21);
 		courseTextPanel.setEditable(false);
-		courseTextPanel.setText("ÀÌ¼ö");
+		courseTextPanel.setText("ì´ìˆ˜");
 		mainPanel.add(courseTextPanel);
 
 		JTextPane professorNameTextPanel = new JTextPane();
 		professorNameTextPanel.setBounds(56, 127, 43, 21);
 		professorNameTextPanel.setEditable(false);
-		professorNameTextPanel.setText("±³¼ö´Ô");
+		professorNameTextPanel.setText("êµìˆ˜ë‹˜");
 		mainPanel.add(professorNameTextPanel);
 
 		JTextPane lectureRoomTextPanel = new JTextPane();
 		lectureRoomTextPanel.setBounds(56, 158, 43, 21);
 		lectureRoomTextPanel.setEditable(false);
-		lectureRoomTextPanel.setText("°­ÀÇ½Ç");
+		lectureRoomTextPanel.setText("ê°•ì˜ì‹¤");
 		mainPanel.add(lectureRoomTextPanel);
 
 		JTextPane emailTextPanel = new JTextPane();
 		emailTextPanel.setBounds(56, 189, 43, 21);
 		emailTextPanel.setEditable(false);
-		emailTextPanel.setText("ÀÌ¸ŞÀÏ");
+		emailTextPanel.setText("ì´ë©”ì¼");
 		mainPanel.add(emailTextPanel);
 
 		
 		
 		/*
-		 * ¸Å°³º¯¼ö·Î ¹ŞÀº lectureArrÀÇ Á¤º¸¸¦ textField¿¡ Ãâ·Â
+		 * ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ì€ lectureArrì˜ ì •ë³´ë¥¼ textFieldì— ì¶œë ¥
 		 */
 		
 		JTextField subjectTextField = new JTextField();
@@ -117,7 +117,7 @@ public class lectureInfo extends JDialog {
 		
 
 		/*
-		 * button panel »ı¼º
+		 * button panel ìƒì„±
 		 * */ 
 		JPanel buttonPane = new JPanel();
 		buttonPane.setBounds(0, 233, 434, 60);
@@ -126,7 +126,7 @@ public class lectureInfo extends JDialog {
 		buttonPane.setLayout(null);
 
 		
-		// linkBtn »ı¼º (Å¬¸¯ ½Ã ¸µÅ© ÁÖ¼Ò Á¢¼Ó)
+		// linkBtn ìƒì„± (í´ë¦­ ì‹œ ë§í¬ ì£¼ì†Œ ì ‘ì†)
 		JButton linkBtn = new JButton();
 		linkBtn.setIcon(new ImageIcon(lectureInfo.class.getResource("/image/webexlogo.PNG")));
 		linkBtn.setBounds(56, 10, 102, 35);
@@ -134,7 +134,7 @@ public class lectureInfo extends JDialog {
 		linkBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				// À¥ºê¶ó¿ìÀú·Î ¸µÅ© ÁÖ¼Ò Á¢¼Ó
+				// ì›¹ë¸Œë¼ìš°ì €ë¡œ ë§í¬ ì£¼ì†Œ ì ‘ì†
 				if (Desktop.isDesktopSupported()) {
 					Desktop desktop = Desktop.getDesktop();
 
@@ -154,16 +154,16 @@ public class lectureInfo extends JDialog {
 
 				}
 
-				dispose(); // Ã¢ ´İ±â
+				dispose(); // ì°½ ë‹«ê¸°
 			}
 		});
 
 			
-		// cancel button »ı¼º(Å¬¸¯½Ã Ã¢ ´İ±â)
+		// cancel button ìƒì„±(í´ë¦­ì‹œ ì°½ ë‹«ê¸°)
 		JButton cancelBtn = new JButton("Cancel");
 		cancelBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				dispose(); // Ã¢ ´İ±â
+				dispose(); // ì°½ ë‹«ê¸°
 			}
 		});
 
