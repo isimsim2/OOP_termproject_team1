@@ -1,6 +1,6 @@
 package project;
 
-public class assignment extends plan
+public class Appointment extends Plan
 {
 	public String difficulty;
 	
@@ -18,6 +18,6 @@ public class assignment extends plan
 	//overriding
 	public String getInfo() 
 	{
-		return super.getInfo() + "   " + content + "   " + "³­ÀÌµµ: "+ difficulty;
+		return super.getInfo() + "   " + content + "   " + "Â³Â­Ã€ÃŒÂµÂµ: "+ difficulty;
 	}
 }
