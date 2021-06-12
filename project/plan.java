@@ -7,43 +7,48 @@ import java.util.Date;
 
 public class plan extends date
 {
+	// fields.
 	public String content;
 	public String remaingDay;
 	
+	// Define methods.
+	// Get a content of the plan.
 	public String getcontent() 
 	{
 		return content;
 	}
-	
+	// Get a remaining time that how much time is left until the appointment.
 	public String getRemainTime() 
 	{
 		return remaingDay;
 	}
 	
-	
+	// Set a content of the plan.
 	public void setContent(String content) 
 	{
 		this.content = content;
 	}
 	
+	// Set a remaining time.
 	public void setRemaingTime(String remaingTime)
 	{
 		this.remaingDay = remaingTime;
 	}
 	
+	// Get a date information.
 	public String getInfo() 
 	{
-		return  super.getMonth() +"¿ù "+ super.getDay() +"ÀÏ " + super.getTime() + "½Ã ";
+		return  super.getMonth() +"ì›” "+ super.getDay() +"ì¼ " + super.getTime() + "ì‹œ ";
 	}
 	
 	
-	//±İÀÏ³¯Â¥¿Í ¾à¼ÓÀÏÀÚ »çÀÌ¿¡ ³²Àº ³¯Â¥(d-day)¸¦ ¸®ÅÏ
+	// ê¸ˆì¼ë‚ ì§œì™€ ì•½ì†ì¼ì ì‚¬ì´ì— ë‚¨ì€ ë‚ ì§œ(d-day)ë¥¼ ë¦¬í„´
 	public String getRemaingTime()
 	{
 		Calendar getToday = Calendar.getInstance();
 		
-		getToday.setTime(new Date()); //±İÀÏ ³¯Â¥
-		getToday.set(Calendar.HOUR,-12); //½Ã°£ ºĞ ÃÊ ÃÊ±âÈ­
+		getToday.setTime(new Date()); // ê¸ˆì¼ ë‚ ì§œ
+		getToday.set(Calendar.HOUR,-12); // ì‹œê°„ ë¶„ ì´ˆ ì´ˆê¸°í™”
 		getToday.set(Calendar.MINUTE,0);
 		getToday.set(Calendar.SECOND,0);
 		
@@ -57,17 +62,17 @@ public class plan extends date
 		
 		
 		Calendar cmpDate = Calendar.getInstance();
-		cmpDate.set(Calendar.HOUR,0); //½Ã°£ ºĞ ÃÊ ÃÊ±âÈ­
+		cmpDate.set(Calendar.HOUR,0); // ì‹œê°„ ë¶„ ì´ˆ ì´ˆê¸°í™”
 		cmpDate.set(Calendar.MINUTE,0);
 		cmpDate.set(Calendar.SECOND,0);
-		cmpDate.setTime(date); //¾à¼ÓÀÏÀÚ
+		cmpDate.setTime(date); // ì•½ì†ì¼ì
 		
-		long Sec = (cmpDate.getTimeInMillis() - getToday.getTimeInMillis() ) / 1000 +1; //ÃÊ ´ÜÀ§·Î °è»ê		
-		long Days = Sec / (24*60*60); // ÀÏ ´ÜÀ§·Î °è»ê
+		long Sec = (cmpDate.getTimeInMillis() - getToday.getTimeInMillis() ) / 1000 +1; // ì´ˆ ë‹¨ìœ„ë¡œ ê³„ì‚°		
+		long Days = Sec / (24*60*60); // ì¼ ë‹¨ìœ„ë¡œ ê³„ì‚°
 		
-		this.setRemaingTime(String.valueOf(Days)); // stringÀ¸·Î º¯È¯ ÈÄ ÀúÀå
+		this.setRemaingTime(String.valueOf(Days)); // stringìœ¼ë¡œ ë³€í™˜ í›„ ì €ì¥
 		
-		// ¾à¼ÓÀÏÀÚ°¡ ±İÀÏÀÏÀÚ º¸´Ù ºü¸¦ ½Ã 
+		// ì•½ì†ì¼ìê°€ ê¸ˆì¼ì¼ì ë³´ë‹¤ ë¹ ë¥¼ ì‹œ 
 		if(Days < 0)
 		{
 			this.remaingDay = "NULL";
