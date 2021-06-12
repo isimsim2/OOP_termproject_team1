@@ -1,6 +1,6 @@
 package project;
 
-public class appointment extends plan
+public class Appointment extends Plan
 {
 	public String friendName;
 	
@@ -17,7 +17,7 @@ public class appointment extends plan
 	//overriding
 	public String getInfo() 
 	{
-		return super.getInfo() + "   " + content + "   " + "¸¸³ª´Â »ç¶÷: " + friendName;
+		return super.getInfo() + "   " + content + "   " + "Â¸Â¸Â³ÂªÂ´Ã‚ Â»Ã§Â¶Ã·: " + friendName;
 	}
 	
 }
