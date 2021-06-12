@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 /**
- * Implement Plan class.
+ * Implement plan class.
  * @author Seo Eun Su.
  * last modified 2021-06-12.
  */
