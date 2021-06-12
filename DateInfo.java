@@ -1,35 +1,56 @@
-import java.util.Date;
-/**
- * Implement DateInfo class.
- * @author Seo Eun Su.
- * last modified 2021-05-25.
- */
-public class DateInfo {
-	private String day;
-	// Bring the time now
-	Date currentTime = new Date(System.currentTimeMillis());
+package project;
+
+public class date 
+{
+	// date Fields.
+	public String month;
+	public String day;
+	public String dayOfTheWeek; 
+	public String time;
 	
-	// Declare constructors.
-	public DateInfo() {
-		day = "The date has not yet been set.";
-	}
-	public DateInfo(String day) {
-		this.day = day;
+	// Get a month of date.
+	public String getMonth() 
+	{
+		return month;
 	}
 	
-	// Return the day
-	public String getDay() {
+	// Get a day of date.
+	public String getDay() 
+	{
 		return day;
 	}
 	
-	/* Set the new day
-	   day format should be like 2021-05-25 11:00:00. */
+	// Get a day of the week.
+	public String getDayOfTheWeek() 
+	{
+		return dayOfTheWeek;
+	}
+	
+	// Get a time.
+	public String getTime() 
+	{
+		return time;
+	}
+	
+	// Set a month of date.
+	public void setMonth(String month) {
+		this.month = month;
+	}
+	
+	// Set a day of date.
 	public void setDay(String day) {
 		this.day = day;
 	}
 	
-	// Return the time now
-	public Date getCurrentTime() {
-		return currentTime;
+	// Set a time.
+	public void setTime(String time) {
+		this.time = time;
 	}
+	
+	// Set a day of the week.
+	public void setDayOfTheWeek(String dayOfTheWeek) 
+	{
+		this.dayOfTheWeek = dayOfTheWeek;
+	}
+	
 }
