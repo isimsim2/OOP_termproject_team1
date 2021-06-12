@@ -1,6 +1,6 @@
 package project;
 
-public class goal extends plan
+public class Goal extends Plan
 {
 	public String importance;
 		
@@ -18,7 +18,7 @@ public class goal extends plan
 	//overriding
 	public String getInfo() 
 	{
-		return super.getInfo() + "   " + content + "   " + "�߿䵵: " + importance;
+		return super.getInfo() + "   " + content + "   " + "Áß¿äµµ: " + importance;
 	}
 
 
