@@ -4,7 +4,11 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
+/**
+ * Implement Plan class.
+ * @author Seo Eun Su.
+ * last modified 2021-06-12.
+ */
 public class plan extends date
 {
 	// fields.
