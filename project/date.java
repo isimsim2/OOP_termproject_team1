@@ -1,5 +1,9 @@
 package project;
-
+/**
+ * Implement date class.
+ * @author Seo Eun Su.
+ * last modified 2021-06-13.
+ */
 public class date 
 {
 	// date Fields.
