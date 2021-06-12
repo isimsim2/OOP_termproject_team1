@@ -2,7 +2,7 @@ package project;
 /**
  * Implement date class.
  * @author Seo Eun Su.
- * last modified 2021-06-13.
+ * last modified 2021-06-12.
  */
 public class date 
 {
