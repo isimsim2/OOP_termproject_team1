@@ -1,0 +1,100 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+/**
+ * Implement Lecture class
+ * 
+ * @author Jo yong joon
+ */
+public class TimeTable {
+	public static HashMap<String, ArrayList> Week = new HashMap<String, ArrayList>(5);
+	public static ArrayList Week_LectureInfo = new ArrayList<String>();
+	public static HashMap<String, String> LectureInfo = new HashMap<String, String>();
+
+	// Constructors
+	public static void showInfo() {
+		System.out.println("월요일 수업 : " + Week.get("월"));
+		System.out.println("화요일 수업 : " + Week.get("화"));
+		System.out.println("수요일 수업 : " + Week.get("수"));
+		System.out.println("목요일 수업 : " + Week.get("목"));
+		System.out.println("금요일 수업 : " + Week.get("금"));
+	}
+
+	public HashMap<String, ArrayList> getInfo() {
+		return Week;
+	}
+  
+  // input hashmap infomation by day
+	public static void setInfo(String[] tmp_info) {
+		String[] SplitedPeriod = tmp_info[1].split(",");
+		for(String tmp_period : SplitedPeriod) {
+			switch(tmp_period.charAt(0)) {
+			case '월':
+				LectureInfo.put("subject", tmp_info[0]);
+				LectureInfo.put("professorName", tmp_info[2]);
+				LectureInfo.put("lectureRoom", tmp_info[3]);
+				LectureInfo.put("email", tmp_info[4]);
+				LectureInfo.put("phoneNumber", tmp_info[5]);
+				LectureInfo.put("webexLink", tmp_info[6]);
+				LectureInfo.put("period", tmp_period);
+				Week_LectureInfo.add(LectureInfo.clone());
+				Week.put("월", (ArrayList) Week_LectureInfo.clone());
+				LectureInfo.clear();
+				Week_LectureInfo.clear();
+				break;
+			case '화':
+				LectureInfo.put("subject", tmp_info[0]);
+				LectureInfo.put("professorName", tmp_info[2]);
+				LectureInfo.put("lectureRoom", tmp_info[3]);
+				LectureInfo.put("email", tmp_info[4]);
+				LectureInfo.put("phoneNumber", tmp_info[5]);
+				LectureInfo.put("webexLink", tmp_info[6]);
+				LectureInfo.put("period", tmp_period);
+				Week_LectureInfo.add(LectureInfo.clone());
+				Week.put("화", (ArrayList) Week_LectureInfo.clone());
+				LectureInfo.clear();
+				Week_LectureInfo.clear();
+				break;
+			case '수':
+				LectureInfo.put("subject", tmp_info[0]);
+				LectureInfo.put("professorName", tmp_info[2]);
+				LectureInfo.put("lectureRoom", tmp_info[3]);
+				LectureInfo.put("email", tmp_info[4]);
+				LectureInfo.put("phoneNumber", tmp_info[5]);
+				LectureInfo.put("webexLink", tmp_info[6]);
+				LectureInfo.put("period", tmp_period);
+				Week_LectureInfo.add(LectureInfo.clone());
+				Week.put("수", (ArrayList) Week_LectureInfo.clone());
+				LectureInfo.clear();
+				Week_LectureInfo.clear();
+				break;
+			case '목':
+				LectureInfo.put("subject", tmp_info[0]);
+				LectureInfo.put("professorName", tmp_info[2]);
+				LectureInfo.put("lectureRoom", tmp_info[3]);
+				LectureInfo.put("email", tmp_info[4]);
+				LectureInfo.put("phoneNumber", tmp_info[5]);
+				LectureInfo.put("webexLink", tmp_info[6]);
+				LectureInfo.put("period", tmp_period);
+				Week_LectureInfo.add(LectureInfo.clone());
+				Week.put("목", (ArrayList) Week_LectureInfo.clone());
+				LectureInfo.clear();
+				Week_LectureInfo.clear();
+				break;
+			case '금':
+				LectureInfo.put("subject", tmp_info[0]);
+				LectureInfo.put("professorName", tmp_info[2]);
+				LectureInfo.put("lectureRoom", tmp_info[3]);
+				LectureInfo.put("email", tmp_info[4]);
+				LectureInfo.put("phoneNumber", tmp_info[5]);
+				LectureInfo.put("webexLink", tmp_info[6]);
+				LectureInfo.put("period", tmp_period);
+				Week_LectureInfo.add(LectureInfo.clone());
+				Week.put("금", (ArrayList) Week_LectureInfo.clone());
+				LectureInfo.clear();
+				Week_LectureInfo.clear();	
+				break;
+			}
+		}
+	}
+}
