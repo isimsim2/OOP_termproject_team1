@@ -11,7 +11,7 @@ public class TimeTable {
 	public static ArrayList Week_LectureInfo = new ArrayList<String>();
 	public static HashMap<String, String> LectureInfo = new HashMap<String, String>();
 
-	// Constructors
+	// Print Classes
 	public static void showInfo() {
 		System.out.println("월요일 수업 : " + Week.get("월"));
 		System.out.println("화요일 수업 : " + Week.get("화"));
